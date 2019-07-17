@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root >
+    <activity id="1">
+    <Link id="1" probability="0" />
+    <Link id="2" probability="0.3" />
+    <Link id="3" probability="0.4" />
+    <Link id="4" probability="0/3" />
+</activity>
+<activity id="2">
+<Link id="1" probability="0.5" />
+<Link id="2" probability="0"/>
+<Link id="3" probability="0.2"/>
+<Link id="4" probability="0.3"/>
+        </activity>
+
+</root>
