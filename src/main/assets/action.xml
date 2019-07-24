@@ -2,20 +2,20 @@
 <root >
     <activity id="1">
         <link id="1" probability="0" />
-        <link id="2" probability="0.6" />
-        <link id="3" probability="0.4" />
+        <link id="2" probability="1" />
+        <link id="3" probability="0" />
         <link id="4" probability="0.3" />
     </activity>
     <activity id="2">
-        <link id="1" probability="0.3" />
-        <link id="2" probability="0.4"/>
-        <link id="3" probability="0.3"/>
-        <link id="4" probability="0.3"/>
+        <link id="1" probability="0" />
+        <link id="2" probability="0"/>
+        <link id="3" probability="1"/>
+        <link id="4" probability="0"/>
     </activity>
     <activity id="3">
-        <link id="1" probability="0.4" />
-        <link id="2" probability="0.4"/>
-        <link id="3" probability="0.2"/>
-        <link id="4" probability="0.3"/>
+        <link id="1" probability="1" />
+        <link id="2" probability="0"/>
+        <link id="3" probability="0"/>
+        <link id="4" probability="0"/>
     </activity>
 </root>

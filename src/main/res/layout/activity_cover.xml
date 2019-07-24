@@ -7,36 +7,44 @@
         android:layout_height="match_parent"
         tools:context=".cover">
 
-    <Button
-            android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="431dp"
-            tools:layout_editor_absoluteX="16dp" android:id="@+id/button8"/>
-    <Button
-            android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="431dp"
-            tools:layout_editor_absoluteX="192dp" android:id="@+id/button9"/>
-    <Button
-            android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="431dp"
-            tools:layout_editor_absoluteX="104dp" android:id="@+id/button10"/>
-    <Button
-            android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="431dp"
-            tools:layout_editor_absoluteX="280dp" android:id="@+id/button11"/>
-    <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView" android:drawableTop="@drawable/testphoto"/>
-    <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView2" android:drawableTop="@drawable/testphoto"/>
-    <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView3" android:drawableTop="@drawable/testphoto"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="431dp"
+                tools:layout_editor_absoluteX="16dp" android:id="@+id/button8"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView"
+                android:drawableTop="@drawable/testphoto"/>
+        <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="431dp"
+                tools:layout_editor_absoluteX="192dp" android:id="@+id/button9"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView2"
+                android:drawableTop="@drawable/testphoto"/>
+        <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="431dp"
+                tools:layout_editor_absoluteX="104dp" android:id="@+id/button10"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView3"
+                android:drawableTop="@drawable/testphoto"/>
+        <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="431dp"
+                tools:layout_editor_absoluteX="280dp" android:id="@+id/button11"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -54,6 +54,7 @@ public class cover extends AppCompatActivity {
                         onBack();
                         break;
                     case 3:
+                        thirdIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         cover.this.startActivity(thirdIntent);
                         cover.this.finish();
                         break;

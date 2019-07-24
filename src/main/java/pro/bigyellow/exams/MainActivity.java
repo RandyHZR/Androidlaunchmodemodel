@@ -4,6 +4,7 @@ package pro.bigyellow.exams;
 import android.app.Instrumentation;
 
 import android.content.Intent;
+import android.os.Debug;
 import android.os.Handler;
 
 import android.support.v7.app.AppCompatActivity;
@@ -13,20 +14,34 @@ import android.view.KeyEvent;
 
 
 import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity  {
     double[][] path;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
+        SimpleDateFormat date =
+                new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+        String logDate = date.format(new Date());
+// Applies the date and time to the name of the trace log.
+        Debug.startMethodTracing(
+                "sample-" + logDate);
+
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+
+
 
 
         new Handler().postDelayed(new Runnable(){
 
             @Override
             public void run() {
+               // Debug.startMethodTracing("burgleaf");//关键语句
 
                 Intent mainIntent = new Intent(MainActivity.this, cover.class);
                 Intent thirdIntent = new Intent(MainActivity.this, nextcover.class);
@@ -55,10 +70,12 @@ public class MainActivity extends AppCompatActivity  {
                         break;
                     case 2:
                         Intent coverintent = new Intent(MainActivity.this,cover.class);
-                        MainActivity.this.startActivity(mainIntent);
+                        coverintent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                        MainActivity.this.startActivity(coverintent);
                         MainActivity.this.finish();
                         break;
                     case 3:
+                        thirdIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
                         MainActivity.this.startActivity(thirdIntent);
                         MainActivity.this.finish();
